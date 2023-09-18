@@ -1,0 +1,32 @@
+name: graphcast
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - autopep8
+  - cartopy
+  - dask
+  - matplotlib
+  - numpy
+  - pandas
+  - rtree
+  - scipy
+  - trimesh
+  - typing_extensions
+  - xarray
+  - pip
+  - ipython
+  - ipykernel
+  - jupyter
+  - dm-tree
+  - ruff
+  - google-colab
+  - google-cloud-storage
+  - pip:
+    - colabtools
+    - chex
+    - dm-haiku
+    - jraph
+    - jax
+    - -e .

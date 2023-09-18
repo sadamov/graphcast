@@ -99,13 +99,24 @@ the coordinate, but that wasn't going to work with a jax array anyway.
 import collections
 import contextlib
 import contextvars
-from typing import Any, Callable, Hashable, Iterator, Mapping, Optional, Union, Tuple, TypeVar, cast
+from typing import (
+  Any,
+  Callable,
+  Hashable,
+  Iterator,
+  Mapping,
+  Optional,
+  Tuple,
+  TypeVar,
+  Union,
+  cast,
+)
 
 import jax
 import jax.numpy as jnp
 import numpy as np
-import tree
 import xarray
+from jax import tree_util as tree
 
 
 def Variable(dims, data, **kwargs) -> xarray.Variable:  # pylint:disable=invalid-name
