@@ -17,7 +17,7 @@ from typing import Callable, Mapping, Optional, Union
 
 from graphcast import typed_graph
 import jax.numpy as jnp
-import jax.tree_util as tree
+from jax import tree_util as tree
 import jraph
 
 

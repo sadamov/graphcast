@@ -360,9 +360,9 @@ def unwrap(value, require_jax=False):
 def _wrapped(func):
   """Surrounds a function with JAX array unwrapping/wrapping."""
   def wrapped_func(*args, **kwargs):
-    args, kwargs = tree.map_structure(unwrap, (args, kwargs))
+    args, kwargs = tree.tree_map(unwrap, (args, kwargs))
     result = func(*args, **kwargs)
-    return tree.map_structure(wrap, result)
+    return tree.tree_map(wrap, result)
   return wrapped_func
 
 
