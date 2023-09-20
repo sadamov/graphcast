@@ -28,5 +28,5 @@ dependencies:
     - chex
     - dm-haiku
     - jraph
-    - jax
+    - "jax[cuda11_pip]==0.4.16 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
     - -e .
