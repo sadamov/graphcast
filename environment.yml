@@ -2,31 +2,31 @@ name: graphcast
 channels:
   - defaults
   - conda-forge
+  - nvidia/label/cuda-11.8.0
 dependencies:
-  - python
   - autopep8
   - cartopy
+  - cuda
   - dask
+  - dm-tree
+  - ipykernel
+  - ipython
+  - jupyter
   - matplotlib
   - numpy
   - pandas
+  - pip
+  - psy-view
+  - python
   - rtree
+  - ruff
   - scipy
   - trimesh
   - typing_extensions
   - xarray
-  - pip
-  - ipython
-  - ipykernel
-  - jupyter
-  - dm-tree
-  - ruff
-  - google-colab
-  - google-cloud-storage
+  - zarr
   - pip:
-    - colabtools
     - chex
     - dm-haiku
     - jraph
-    - "jax[cuda11_pip]==0.4.16 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
     - -e .
